@@ -1,0 +1,20 @@
+{
+  "service": "dalr-post-fund-account",
+  "plugins": ["serverless-offline", "serverless-dynamodb-local"],
+  "provider": {
+    "name": "aws",
+    "runtime": "nodejs14.x",
+    "stage": "dev",
+    "region": "us-west-2"
+  },
+  "functions": {
+    "postFundAccount": {
+      "handler": "src/lambda/postFundAccount.handler",
+      "events": [
+        {
+          "httpApi": "POST /postFundAccount"
+        }
+      ]
+    }
+  }
+}
