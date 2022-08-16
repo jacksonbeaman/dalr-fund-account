@@ -1,6 +1,6 @@
 {
   "service": "dalr-post-fund-account",
-  "plugins": ["serverless-offline", "serverless-dynamodb-local"],
+  "plugins": ["serverless-offline"],
   "provider": {
     "name": "aws",
     "runtime": "nodejs14.x",
