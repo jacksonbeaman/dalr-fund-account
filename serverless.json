@@ -9,7 +9,7 @@
   },
   "functions": {
     "postFundAccount": {
-      "handler": "src/lambda/postFundAccount.handler",
+      "handler": "src/index.handler",
       "events": [
         {
           "httpApi": "POST /postFundAccount"
